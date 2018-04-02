@@ -35,7 +35,7 @@ class Game
 			update(player_no)
 			@turn += 1
 			draw
-			player_no =  player_no == 2? 1 : 2
+			player_no = (player_no == 2)? 1 : 2
 			result = outcome
 		end until(result == "done")
 	end
